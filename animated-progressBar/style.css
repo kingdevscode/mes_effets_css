@@ -44,25 +44,31 @@ span#js-progress{
 }
 @keyframes progression1{
     0%{
+        opacity: 0.1;
         width: 0%;
     }
     100%{
+        opacity: 1;
         width: 70%;
     }
 }
 @keyframes progression2{
     0%{
+        opacity: 0.1;
         width: 0%;
     }
     100%{
+        opacity: 1;
         width: 80%;
     }
 }
 @keyframes progression3{
     0%{
+        opacity: 0.1;
         width: 0%;
     }
     100%{
+        opacity: 1;
         width: 50%;
     }
 }
