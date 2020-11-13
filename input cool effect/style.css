@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("../../4948376_L.jpg");
+    background-size: cover;
+}
+body::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10%;
+    z-index: 0;
+    width: 60%;
+    height: 100%;
+    background: #fff;
+    opacity: .3;
+    transform: skewX(-2deg);
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+.box h1{
+    margin: 0 0 30px;
+    padding: 0;
+    width: 100%;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.301);
+    text-align: center;
+}
+.box .input-box{
+    position: relative;
+}
+.box .input-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    transition: .3s; 
+}
+.box .input-box input:focus{
+    border-bottom: 2px solid green;
+}
+.box .input-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .3s;
+}
+.box .input-box input:focus ~ label,
+.box .input-box input:valid ~ label{
+    top: -18px;
+    left: 0;
+    color: green;
+    font-size: 12px;
+}
+.box input[type=submit]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: green;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
